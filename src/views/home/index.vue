@@ -1,14 +1,13 @@
 <template>
   <div class="">
-    <!-- 一级路由 -->
-    <router-view></router-view>
+    <h1>HomePage</h1>
   </div>
 </template>
 <script>
 export default {
   components: {},
   props: {},
-  name: 'MyApp',
+  name: 'HomePage',
   data() {
     return {}
   },
