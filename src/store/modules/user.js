@@ -9,7 +9,7 @@ export default {
         id: '',
         avatar: '',
         nickname: '',
-        account: '111',
+        account: '',
         mobile: '',
         token: ''
       }

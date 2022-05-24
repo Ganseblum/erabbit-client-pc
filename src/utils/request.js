@@ -15,6 +15,7 @@ const instance = axios.create({
   timeout: 5000
 })
 
+// 请求拦截器
 instance.interceptors.request.use(config => {
   // 拦截业务逻辑
   // 进行请求配置的修改
@@ -33,6 +34,7 @@ instance.interceptors.request.use(config => {
   return Promise.reject(err)
 })
 
+// 响应拦截器
 // res => res.data  取出data数据，将来调用接口的时候直接拿到的就是后台的数据
 instance.interceptors.response.use(res => res.data, err => {
   // 401 状态码，进入该函数
